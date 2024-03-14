@@ -1,0 +1,26 @@
+PS C:\Users\user\local> cd .\git_challenge\
+PS C:\Users\user\local\git_challenge> git init
+Initialized empty Git repository in C:/Users/user/local/git_challenge/.git/
+PS C:\Users\user\local\git_challenge> git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+PS C:\Users\user\local\git_challenge> git add hello_world.txt
+PS C:\Users\user\local\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 52744af] hello_world.txt繧定ｿｽ蜉
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\user\local\git_challenge> git add hello_world.txt
+PS C:\Users\user\local\git_challenge> git commit -m "日本語訳を追記"       
+[main 42cbcdd] 譌･譛ｬ隱櫁ｨｳ繧定ｿｽ險
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\user\local\git_challenge> git log
+commit 42cbcdd558ffddacf4b073a7daa12df09185d78c (HEAD -> main)
+Author: ai-nakagawara <pon01ai02@gmail.com>
+Date:   Thu Mar 14 14:56:44 2024 +0900
+
+    日本語訳を追記
+
+commit 52744af3a16a91daf391d569915ecd2213dddb62
+Author: ai-nakagawara <pon01ai02@gmail.com>
+Date:   Thu Mar 14 14:54:43 2024 +0900
+
+    hello_world.txtを追加
